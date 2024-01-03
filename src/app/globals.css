@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.bg{
+  background: rgb(240,225,115);
+background: linear-gradient(0deg, rgba(240,225,115,1) 74%, rgba(255,255,255,1) 100%);
+}
+.btn{
+    background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,241,0,1) 2%, rgba(255,241,0,1) 98%, rgba(255,168,0,1) 100%);
+}
+.icon1:hover{
+  fill: #ffe100;
+  color: #ffe100;
+}
+
+.icon2:hover{
+  fill: aqua;
+  color: aqua;
+}
+.icon3:hover{
+  fill: black;
+  color: black;
+}
