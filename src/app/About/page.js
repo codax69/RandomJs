@@ -9,7 +9,7 @@ import Footer from '../Components/Footer';
 const Page = () => {
   return (
     <>
-      <section className=" px-4 lg:max-w-7xl h-screen mx-auto">
+      <section className=" relative px-4 lg:max-w-7xl h-auto mx-auto">
         <Hero heading="Pritesh Patel-Web Creator" subhead="Welcome to the Developer Page of Random JS! Meet Pritesh Patel, the innovative mind and Lead Developer behind this comprehensive platform." />
         <div className="my-32">
         <div className='my-12'>
@@ -45,8 +45,8 @@ const Page = () => {
           </div>
         </div>
         </div>
-        <Footer/>
         </section>
+        <div className=' relative bottom-0'><Footer/></div>
     </>
   );
 }
