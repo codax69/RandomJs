@@ -19,7 +19,7 @@ const NQNABox = () => {
                     className="text-black font-bold hover:text-slate-800 cursor-pointer"
                     onClick={() => ssh(index)}
                   >
-                    Question:{value.que}
+                    Question{value.id} :    {value.que}
                   </span>
                   <button
                     className="btn bg-yellow-400 text-black py-2 px-5 btn hover:bg-slate-400 ml-10 hover:rounded-2xl"

@@ -12,7 +12,7 @@ const page = () => {
       <div className='relative lg:w-60 lg:h-screen'>
         <Sidebar />
       </div>
-      <div className='w-auto h-auto pt-16 lg:top-16  lg:p-20 lg:fixed lg:left-[23rem]'>
+      <div className='w-auto h-auto pt-16 lg:top-16  lg:p-20 lg:absolute lg:left-[23rem]'>
         <QandAbox/>
       </div>
       <div className='w-auto h-auto top-16 lg:p-20 lg:fixed lg:left-[23rem] lg:hidden '>
