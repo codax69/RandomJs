@@ -1,4 +1,5 @@
 'use client'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import React, { useState, useEffect } from "react";
 import Hero from "./Components/Hero";
 import InfoBox from "./Components/InfoBox";
