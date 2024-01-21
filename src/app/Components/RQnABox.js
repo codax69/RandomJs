@@ -19,7 +19,7 @@ const RQnABox = () => {
                     className="text-black font-bold hover:text-slate-700 cursor-pointer"
                     onClick={() => hss(index)}
                   >
-                    Question{value.id} : {value.qus}
+                    Question{value.id} : {value.que}
                   </span>
                   <button
                     className="btn bg-yellow-400 text-black py-2 px-5 hover:bg-white ml-10 hover:rounded-2xl"
