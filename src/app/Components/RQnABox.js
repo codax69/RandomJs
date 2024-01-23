@@ -29,7 +29,12 @@ const RQnABox = () => {
                   </button>
                 </div>
                 {sel === index ? (
-                  <div className="text-slate-800"><span className=" text-blue-700 font-semibold">Answer:</span> {value.ans}</div>
+                  <div className="text-slate-800">
+                    <span className=" text-blue-700 font-semibold">
+                      Answer:
+                    </span>{" "}
+                    {value.ans}
+                  </div>
                 ) : null}
               </li>
             );
