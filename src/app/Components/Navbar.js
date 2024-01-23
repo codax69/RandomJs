@@ -17,7 +17,7 @@ const Navbar = () => {
       <div className="fixed flex w-screen justify-between items-center bg-white hover:cursor-pointer lg:w-screen lg:justify-around py-2 z-40">
         <a onClick={() => router.push("/")}>
           <div className='flex items-center'>
-            <h1 className='text-black pl-3 text-xl lg:font-normal lg:text-3xl'>Random</h1>
+            <h1 className='text-slate-900 pl-3 text-xl lg:font-normal lg:text-3xl'>Random</h1>
             <img className='h-12' src="https://cdn-icons-png.flaticon.com/128/541/541509.png?ga=GA1.1.627835424.1701535233&semt=ais" alt="" />
           </div>
         </a>
