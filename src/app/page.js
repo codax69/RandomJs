@@ -66,7 +66,7 @@ const Page = () => {
           />
         </div>
         <div className="flex items-center justify-center mt-4 lg:ml-14">
-          <Link href="/Q&A"><Btn btnTitle="Jump To Question And Answer Journey" /></Link>
+          <Link href="/Q&A/Js"><Btn btnTitle="Jump To Question And Answer Journey" /></Link>
         </div>
         <div className="flex justify-end pr-14"><TitleBox title="🤓Features of Random JS" /></div>
         <div className="flex justify-end">
