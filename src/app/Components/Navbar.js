@@ -5,6 +5,23 @@ import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
 
 const Navbar = () => {
+  const navList = [
+    {
+      id: 1,
+      navname: "home",
+      navlink: "/",
+    },
+    {
+      id: 2,
+      navname: "Q&A",
+      navlink: "/Q&A/Js",
+    },
+    {
+      id: 3,
+      navname: "about",
+      navlink: "/About",
+    },
+  ];
   const [open, setOpen] = useState(true);
   const router = useRouter();
 
@@ -28,25 +45,18 @@ const Navbar = () => {
           </div>
         </a>
         <nav className="space-x-20 hidden lg:flex">
-          <a
-            onClick={() => router.push("/")}
-            className="nav-link text-slate-900 font-medium px-3 py-1 lg:hover:text-[#ffe100] hover:cursor-pointer"
-          >
-            Home
-          </a>
-          <a
-            onClick={() => router.push("/Q&A/Js")}
-            className="nav-link text-slate-900 font-medium px-3 py-1 lg:hover:text-[#ffe100] hover:cursor-pointer"
-          >
-            Q&A
-          </a>
-          <a
-            onClick={() => router.push("/About")}
-            className="nav-link text-slate-900 font-medium px-3 py-1 lg:hover:text-[#ffe100] hover:cursor-pointer"
-          >
-            About
-          </a>
-        </nav>
+        {navList.map((link, index) => {
+          return (
+            <a
+            key={index}
+              onClick={() => router.push(link.navlink)}
+              className="nav-link capitalize text-slate-900 font-medium px-3 py-1 lg:hover:text-[#ffe100] hover:cursor-pointer"
+            >
+              {link.navname}
+            </a>
+          );
+        })}
+         </nav>
         <div className="mr-3 lg:hidden" onClick={handleClick}>
           {!open ? <IoMdClose size={35} /> : <GiHamburgerMenu size={35} />}
         </div>
@@ -83,6 +93,7 @@ const Navbar = () => {
         >
           About
         </a>
+       
       </nav>
     </>
   );
