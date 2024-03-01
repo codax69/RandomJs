@@ -41,7 +41,7 @@ const NQNABox = () => {
                   <span>
                   <button
                     className="btn text-black py-2 px-5 hover:bg-white ml-10 hover:rounded-2xl "
-                    onClick={() => hss(index)}
+                    onClick={() => ssh(index)}
                   >
                     Answer
                   </button>
