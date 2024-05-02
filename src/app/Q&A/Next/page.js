@@ -9,7 +9,7 @@ const Page = () => {
         <div className="relative lg:w-60 lg:h-screen">
           <Sidebar />
         </div>
-        <div className="absolute w-auto h-auto top-16 lg:p-20 lg:absolute lg:left-[23rem] ">
+        <div className="absolute w-auto h-auto top-16 xl:pl-80 lg:p-20 lg:absolute lg:left-[23rem] ">
           <NQNABox qnaList="QandA" />
         </div>
       </div>

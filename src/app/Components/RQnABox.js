@@ -87,7 +87,7 @@ const RQnABox = () => {
                     onMouseEnter={() => setIsHover(false)}
                     className="text-slate-800"
                   >
-                    <span className=" text-blue-700 font-semibold">
+                    <span className=" text-blue-700 w-[59%] font-semibold">
                       Answer:
                     </span>{" "}
                     {value.ans}

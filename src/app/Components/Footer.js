@@ -1,7 +1,8 @@
 import React from "react";
 import NavBox from "./NavBox";
-
+import { useRouter } from "next/navigation";
 const Footer = () => {
+  const router = useRouter();
   return (
     <>
       <div className=" bg w-full ">
@@ -36,7 +37,7 @@ const Footer = () => {
             />
           </div>
           <div className="w-full h-[2px] bg-slate-950"></div>
-          <div className="flex items-center">
+          <div className="flex items-center cursor-pointer">
             <a onClick={() => router.push("/")}>
               <div className="flex items-center">
                 <h1 className="text-black pl-16 py-11 text-xl lg:font-normal lg:text-3xl">
